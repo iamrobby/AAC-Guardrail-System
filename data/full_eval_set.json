@@ -1,0 +1,375 @@
+[
+  {
+    "id": 1,
+    "task": "math",
+    "task_id": "sharded-GSM8K/856",
+    "incomplete_prompt": "how many packs of glue sticks does Mr. Jackson need?",
+    "remaining_shards": [
+      "Mr. Jackson has 27 students in his fourth-grade class",
+      "he plans to give each student 2 glue sticks",
+      "the glue sticks are sold in packs of 8",
+      "he can only purchase full packs of glue sticks",
+      "he knows there might be extra glue sticks left over after buying the packs"
+    ],
+    "full_instruction": "how many packs of glue sticks does Mr. Jackson need? Mr. Jackson has 27 students in his fourth-grade class he plans to give each student 2 glue sticks the glue sticks are sold in packs of 8 he can only purchase full packs of glue sticks he knows there might be extra glue sticks left over after buying the packs",
+    "num_shards": 6
+  },
+  {
+    "id": 2,
+    "task": "code",
+    "task_id": "sharded-HumanEval/59",
+    "incomplete_prompt": "Find the biggest prime factor",
+    "remaining_shards": [
+      "The number is always bigger than 1",
+      "The number isn't a prime itself",
+      "For instance, 13195 gives 29"
+    ],
+    "full_instruction": "Find the biggest prime factor The number is always bigger than 1 The number isn't a prime itself For instance, 13195 gives 29",
+    "num_shards": 4
+  },
+  {
+    "id": 3,
+    "task": "code",
+    "task_id": "sharded-HumanEval/118",
+    "incomplete_prompt": "Find the nearest vowel from the end",
+    "remaining_shards": [
+      "I've got a word to work with",
+      "Look for a vowel between consonants",
+      "Check from the right of the word",
+      "Pay attention to cases",
+      "Ignore vowels at the start or end",
+      "Give me an empty string if no such vowel is found",
+      "The word uses only English letters",
+      "Example: 'yogurt' gives you 'u'"
+    ],
+    "full_instruction": "Find the nearest vowel from the end I've got a word to work with Look for a vowel between consonants Check from the right of the word Pay attention to cases Ignore vowels at the start or end Give me an empty string if no such vowel is found The word uses only English letters Example: 'yogurt' gives you 'u'",
+    "num_shards": 9
+  },
+  {
+    "id": 4,
+    "task": "math",
+    "task_id": "sharded-GSM8K/1058",
+    "incomplete_prompt": "how many stickers does Leo have now?",
+    "remaining_shards": [
+      "two years ago, his collection included 100 stickers.",
+      "last year, he added 50 stickers to his collection.",
+      "this year, Leo collected double the amount he collected last year."
+    ],
+    "full_instruction": "how many stickers does Leo have now? two years ago, his collection included 100 stickers. last year, he added 50 stickers to his collection. this year, Leo collected double the amount he collected last year.",
+    "num_shards": 4
+  },
+  {
+    "id": 5,
+    "task": "code",
+    "task_id": "sharded-livecodebench/2855",
+    "incomplete_prompt": "max jumps to reach the last index? ",
+    "remaining_shards": [
+      "got an array and a target integer",
+      "I can jump from index i to j if the difference of two numbers in those positions are within -target and target",
+      "I start jumping from index 0",
+      "if I can't reach the last index, just return -1",
+      "array length is between 2 and 1000",
+      "array values can go from -10^9 to 10^9",
+      "target can be anywhere from 0 to 2 billion",
+      "example: can't make it with [1,3,6,4,1,2] when target is 0"
+    ],
+    "full_instruction": "max jumps to reach the last index?  got an array and a target integer I can jump from index i to j if the difference of two numbers in those positions are within -target and target I start jumping from index 0 if I can't reach the last index, just return -1 array length is between 2 and 1000 array values can go from -10^9 to 10^9 target can be anywhere from 0 to 2 billion example: can't make it with [1,3,6,4,1,2] when target is 0",
+    "num_shards": 9
+  },
+  {
+    "id": 6,
+    "task": "code",
+    "task_id": "sharded-livecodebench/2825",
+    "incomplete_prompt": "how short can the string get with a specific deletion strategy?",
+    "remaining_shards": [
+      "I can pick a position in the string, find the same letter nearby on both sides, and delete them",
+      "just need to return the length of the string after all possible deletions",
+      "the input is a string with 0-based indexing",
+      "the string length goes from 1 to 100",
+      "only lowercase letters are in the string",
+      "like, with \"aaabc\", it shrinks down to 3"
+    ],
+    "full_instruction": "how short can the string get with a specific deletion strategy? I can pick a position in the string, find the same letter nearby on both sides, and delete them just need to return the length of the string after all possible deletions the input is a string with 0-based indexing the string length goes from 1 to 100 only lowercase letters are in the string like, with \"aaabc\", it shrinks down to 3",
+    "num_shards": 7
+  },
+  {
+    "id": 7,
+    "task": "code",
+    "task_id": "sharded-livecodebench/2811",
+    "incomplete_prompt": "min sum of k-avoiding array of length n?",
+    "remaining_shards": [
+      "k-avoiding means no two numbers add up to k",
+      "the input gives two numbers, n and k",
+      "both n and k range from 1 to 50",
+      "for example, if n is 5 and k is 4, the result is 18"
+    ],
+    "full_instruction": "min sum of k-avoiding array of length n? k-avoiding means no two numbers add up to k the input gives two numbers, n and k both n and k range from 1 to 50 for example, if n is 5 and k is 4, the result is 18",
+    "num_shards": 5
+  },
+  {
+    "id": 8,
+    "task": "code",
+    "task_id": "sharded-HumanEval/76",
+    "incomplete_prompt": "Check if a number is a power of another",
+    "remaining_shards": [
+      "If it's not a power, return false",
+      "A number x is a power of n if n raised to some integer equals x",
+      "For example, 1 is a simple power of 4, returning true",
+      "For example, 3 is not a power of 2, returning false"
+    ],
+    "full_instruction": "Check if a number is a power of another If it's not a power, return false A number x is a power of n if n raised to some integer equals x For example, 1 is a simple power of 4, returning true For example, 3 is not a power of 2, returning false",
+    "num_shards": 5
+  },
+  {
+    "id": 9,
+    "task": "math",
+    "task_id": "sharded-GSM8K/1066",
+    "incomplete_prompt": "how many pizzas are still left?",
+    "remaining_shards": [
+      "the glee club started with 20 pizzas.",
+      "they ate 70% of those 20 pizzas.",
+      "meanwhile, the football team ordered twice as many pizzas as the glee club.",
+      "the football team also finished 80% of their pizzas."
+    ],
+    "full_instruction": "how many pizzas are still left? the glee club started with 20 pizzas. they ate 70% of those 20 pizzas. meanwhile, the football team ordered twice as many pizzas as the glee club. the football team also finished 80% of their pizzas.",
+    "num_shards": 5
+  },
+  {
+    "id": 10,
+    "task": "code",
+    "task_id": "sharded-HumanEval/44",
+    "incomplete_prompt": "Convert a number to a different base",
+    "remaining_shards": [
+      "give back the result as a string",
+      "work with two numbers, the number and the target base",
+      "the base will be a single-digit number",
+      "for example, converting 8 to base 3 gives '22'"
+    ],
+    "full_instruction": "Convert a number to a different base give back the result as a string work with two numbers, the number and the target base the base will be a single-digit number for example, converting 8 to base 3 gives '22'",
+    "num_shards": 5
+  },
+  {
+    "id": 11,
+    "task": "math",
+    "task_id": "sharded-GSM8K/401",
+    "incomplete_prompt": "how much does the builder earn in a year?",
+    "remaining_shards": [
+      "the builder works 4 weeks each month",
+      "each week, he works 6 days",
+      "his daily pay rate is $50"
+    ],
+    "full_instruction": "how much does the builder earn in a year? the builder works 4 weeks each month each week, he works 6 days his daily pay rate is $50",
+    "num_shards": 4
+  },
+  {
+    "id": 12,
+    "task": "math",
+    "task_id": "sharded-GSM8K/1187",
+    "incomplete_prompt": "how long will it take Jay to make 60 snowballs?",
+    "remaining_shards": [
+      "Jay is preparing for a snowball fight with his sister by making snowballs.",
+      "he is able to build 20 snowballs per hour.",
+      "however, 2 snowballs melt every 15 minutes."
+    ],
+    "full_instruction": "how long will it take Jay to make 60 snowballs? Jay is preparing for a snowball fight with his sister by making snowballs. he is able to build 20 snowballs per hour. however, 2 snowballs melt every 15 minutes.",
+    "num_shards": 4
+  },
+  {
+    "id": 13,
+    "task": "math",
+    "task_id": "sharded-GSM8K/420",
+    "incomplete_prompt": "what is Mr. Josue's total capital now?",
+    "remaining_shards": [
+      "Mr. Josue raised money from two banks for his store.",
+      "the first bank provided him with $4000.",
+      "the second bank gave him twice the amount the first bank gave.",
+      "before receiving the loans, he already had $5000 in capital."
+    ],
+    "full_instruction": "what is Mr. Josue's total capital now? Mr. Josue raised money from two banks for his store. the first bank provided him with $4000. the second bank gave him twice the amount the first bank gave. before receiving the loans, he already had $5000 in capital.",
+    "num_shards": 5
+  },
+  {
+    "id": 14,
+    "task": "code",
+    "task_id": "sharded-HumanEval/26",
+    "incomplete_prompt": "Filter out duplicates from a list",
+    "remaining_shards": [
+      "The input is a list of numbers",
+      "Keep the remaining numbers in their original order",
+      "duplicates must entirely be removed",
+      "For example, [1, 2, 3, 2, 4] becomes [1, 3, 4]"
+    ],
+    "full_instruction": "Filter out duplicates from a list The input is a list of numbers Keep the remaining numbers in their original order duplicates must entirely be removed For example, [1, 2, 3, 2, 4] becomes [1, 3, 4]",
+    "num_shards": 5
+  },
+  {
+    "id": 15,
+    "task": "math",
+    "task_id": "sharded-GSM8K/646",
+    "incomplete_prompt": "what's the total distance Alisa and Stanley biked?",
+    "remaining_shards": [
+      "Alisa's biking speed was 12 mph",
+      "she biked for 4.5 hours.",
+      "Stanley's biking speed was 10 mph",
+      "he biked for 2.5 hours."
+    ],
+    "full_instruction": "what's the total distance Alisa and Stanley biked? Alisa's biking speed was 12 mph she biked for 4.5 hours. Stanley's biking speed was 10 mph he biked for 2.5 hours.",
+    "num_shards": 5
+  },
+  {
+    "id": 16,
+    "task": "math",
+    "task_id": "sharded-GSM8K/621",
+    "incomplete_prompt": "calculate the total cost of John's physical therapy?",
+    "remaining_shards": [
+      "John hurt his back and needed physical therapy.",
+      "he attended therapy for 6 weeks.",
+      "he went to therapy twice per week.",
+      "each session lasted 2 hours.",
+      "the cost per hour for a session was $125."
+    ],
+    "full_instruction": "calculate the total cost of John's physical therapy? John hurt his back and needed physical therapy. he attended therapy for 6 weeks. he went to therapy twice per week. each session lasted 2 hours. the cost per hour for a session was $125.",
+    "num_shards": 6
+  },
+  {
+    "id": 17,
+    "task": "code",
+    "task_id": "sharded-HumanEval/122",
+    "incomplete_prompt": "Add up some numbers from a list",
+    "remaining_shards": [
+      "You have a non-empty list of numbers",
+      "There's a number k involved too",
+      "Consider only the numbers with two or fewer digits",
+      "Only look at the first k items in the list",
+      "For example, if the list is [111,21,3,4000,5,6,7,8,9] and k is 4, the sum is 24",
+      "The list can have between 1 and 100 numbers",
+      "k can be any number up to the length of the list"
+    ],
+    "full_instruction": "Add up some numbers from a list You have a non-empty list of numbers There's a number k involved too Consider only the numbers with two or fewer digits Only look at the first k items in the list For example, if the list is [111,21,3,4000,5,6,7,8,9] and k is 4, the sum is 24 The list can have between 1 and 100 numbers k can be any number up to the length of the list",
+    "num_shards": 8
+  },
+  {
+    "id": 18,
+    "task": "code",
+    "task_id": "sharded-HumanEval/120",
+    "incomplete_prompt": "Get the top k biggest numbers from a list",
+    "remaining_shards": [
+      "You'll have a list of numbers and a number k to work with",
+      "The result should be a sorted list of those top numbers and exactly k numbers long",
+      "As an example, if the input is [-3, -4, 5] and k is 3, the output should be [-4, -3, 5]",
+      "The list will have between 1 and 1000 numbers",
+      "Every number in the list will range from -1000 to 1000",
+      "k can be anywhere from 0 to the length of the list"
+    ],
+    "full_instruction": "Get the top k biggest numbers from a list You'll have a list of numbers and a number k to work with The result should be a sorted list of those top numbers and exactly k numbers long As an example, if the input is [-3, -4, 5] and k is 3, the output should be [-4, -3, 5] The list will have between 1 and 1000 numbers Every number in the list will range from -1000 to 1000 k can be anywhere from 0 to the length of the list",
+    "num_shards": 7
+  },
+  {
+    "id": 19,
+    "task": "code",
+    "task_id": "sharded-HumanEval/36",
+    "incomplete_prompt": "Count how often 7 shows up",
+    "remaining_shards": [
+      "look at numbers below a given number",
+      "consider only numbers divisible by 11 or 13",
+      "for example, if n is 50, the result is 0"
+    ],
+    "full_instruction": "Count how often 7 shows up look at numbers below a given number consider only numbers divisible by 11 or 13 for example, if n is 50, the result is 0",
+    "num_shards": 4
+  },
+  {
+    "id": 20,
+    "task": "code",
+    "task_id": "sharded-livecodebench/2800",
+    "incomplete_prompt": "what's the shortest length I can get by removing AB or CD?",
+    "remaining_shards": [
+      "I can take out one of AB or CD one at a time",
+      "after removing, the string might join up and form more AB or CD",
+      "the input is just uppercase English letters",
+      "length of the string is between 1 and 100",
+      "Example: In 'ABFCACDB', you can get down to a length of 2"
+    ],
+    "full_instruction": "what's the shortest length I can get by removing AB or CD? I can take out one of AB or CD one at a time after removing, the string might join up and form more AB or CD the input is just uppercase English letters length of the string is between 1 and 100 Example: In 'ABFCACDB', you can get down to a length of 2",
+    "num_shards": 6
+  },
+  {
+    "id": 21,
+    "task": "code",
+    "task_id": "sharded-livecodebench/2816",
+    "incomplete_prompt": "how to turn a string into a palindrome with fewest changes?",
+    "remaining_shards": [
+      "you can swap one character with any other lowercase letter in each move",
+      "if there's a tie, pick the alphabetically first option",
+      "for example, turning 'egcfe' into a palindrome 'efcfe' is possible with just one change",
+      "the string is made up of only lowercase letters",
+      "lexicographically smaller means an earlier alphabet letter on the first difference",
+      "the string can be anywhere from 1 to 1000 characters long"
+    ],
+    "full_instruction": "how to turn a string into a palindrome with fewest changes? you can swap one character with any other lowercase letter in each move if there's a tie, pick the alphabetically first option for example, turning 'egcfe' into a palindrome 'efcfe' is possible with just one change the string is made up of only lowercase letters lexicographically smaller means an earlier alphabet letter on the first difference the string can be anywhere from 1 to 1000 characters long",
+    "num_shards": 7
+  },
+  {
+    "id": 22,
+    "task": "math",
+    "task_id": "sharded-GSM8K/144",
+    "incomplete_prompt": "help me calculate Kim's weekly profit?",
+    "remaining_shards": [
+      "Kim has recently started a housekeeping business.",
+      "he's trying to figure out how much profit he'll earn from clients.",
+      "right now, he has 3 clients.",
+      "he's also in talks with 5 potential new clients.",
+      "he feels confident these potential clients will become actual clients, so he's counting them.",
+      "each house requires 2 bottles of bleach for cleaning.",
+      "additionally, each home also needs a pack of cloths.",
+      "the price of each bottle of bleach is $2.",
+      "each pack of cloths costs $5.",
+      "Kim expects to make $92 total each week from his work.",
+      "profit is simply the total income minus the total expenses he incurs."
+    ],
+    "full_instruction": "help me calculate Kim's weekly profit? Kim has recently started a housekeeping business. he's trying to figure out how much profit he'll earn from clients. right now, he has 3 clients. he's also in talks with 5 potential new clients. he feels confident these potential clients will become actual clients, so he's counting them. each house requires 2 bottles of bleach for cleaning. additionally, each home also needs a pack of cloths. the price of each bottle of bleach is $2. each pack of cloths costs $5. Kim expects to make $92 total each week from his work. profit is simply the total income minus the total expenses he incurs.",
+    "num_shards": 12
+  },
+  {
+    "id": 23,
+    "task": "math",
+    "task_id": "sharded-GSM8K/201",
+    "incomplete_prompt": "what's John's total comp for the year",
+    "remaining_shards": [
+      "John received an award at work.",
+      "the award includes a $5000 one-time monetary reward.",
+      "as part of the award, he also got a 5% salary increase.",
+      "John's weekly salary is $2000.",
+      "John earns this weekly salary for all the weeks in a year."
+    ],
+    "full_instruction": "what's John's total comp for the year John received an award at work. the award includes a $5000 one-time monetary reward. as part of the award, he also got a 5% salary increase. John's weekly salary is $2000. John earns this weekly salary for all the weeks in a year.",
+    "num_shards": 6
+  },
+  {
+    "id": 24,
+    "task": "math",
+    "task_id": "sharded-GSM8K/855",
+    "incomplete_prompt": "how old am I?",
+    "remaining_shards": [
+      "I am 3 years younger than my brother.",
+      "I am 2 years older than my sister.",
+      "my mom's age is one less than three times my brother's age.",
+      "the total of all our ages is 87."
+    ],
+    "full_instruction": "how old am I? I am 3 years younger than my brother. I am 2 years older than my sister. my mom's age is one less than three times my brother's age. the total of all our ages is 87.",
+    "num_shards": 5
+  },
+  {
+    "id": 25,
+    "task": "math",
+    "task_id": "sharded-GSM8K/1197",
+    "incomplete_prompt": "how much does John spend in total?",
+    "remaining_shards": [
+      "John started by purchasing 10 bottles of scotch.",
+      "He paid $600 for all the scotch.",
+      "Next, he bought twice as many bottles of cognac as scotch.",
+      "Each bottle of cognac cost 50% more than each bottle of scotch."
+    ],
+    "full_instruction": "how much does John spend in total? John started by purchasing 10 bottles of scotch. He paid $600 for all the scotch. Next, he bought twice as many bottles of cognac as scotch. Each bottle of cognac cost 50% more than each bottle of scotch.",
+    "num_shards": 5
+  }
+]
