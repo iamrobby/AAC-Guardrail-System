@@ -1,4 +1,7 @@
 ./venv
+venv/
 .venv
 .env
-src/__pycache__
+__pycache__/
+.pytest_cache/
+results/
